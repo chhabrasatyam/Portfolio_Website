@@ -1,0 +1,449 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* .animated-text {
+    font-size: 36px;
+    animation: animation-name 2s ease-in-out infinite;
+  }
+  
+  @keyframes animation-name {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  } */
+
+body
+{
+    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+#header
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container
+{
+    padding: 10px 10%;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo
+{
+    width: 220px;
+}
+
+nav ul li
+{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after
+{
+    content: ' ';
+    height: 3px;
+    width: 0;
+    background-color: #BB86FC;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+
+}
+
+nav ul li a:hover::after
+{
+    width: 100%;
+}
+
+div h1 a
+{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+div h1 a::after
+{
+    content: ' ';
+    height: 3px;
+    width: 0;
+    background-color: #BB86FC;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+
+}
+
+div h1 a:hover::after
+{
+    width: 100%;
+}
+
+
+.header-text
+{
+    margin-top: 20%;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* -----------------------about----------------------- */
+
+#about
+{
+    padding: 80px 0;
+    color: #d3d3d3cb;
+}
+
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col1
+{
+    flex-basis: 35%;
+}
+
+.col1 img
+{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.col2
+{
+    flex-basis: 60%;
+}
+
+.sub
+{
+    color: #BB86FC;
+    font-size: 45px;
+    font-weight: 450;
+
+}
+
+.edu
+{
+    margin: 20px 0 40px;
+    color: #dec4ff;
+
+    position: relative;
+}
+
+.edu::after
+{
+    content: ' ';
+    height: 3px;
+    width: 0;
+    background-color: #d3d3d3cb;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;    
+}
+
+.edu:hover::after
+{
+    width: 13.5%;
+}
+
+span
+{
+    color: #dec4ff;
+}
+
+.school ul li
+{
+    list-style: none;
+    margin: 10px 0;
+}
+
+/* -------------------services----------------- */
+#services
+{
+    padding: 30px 0;
+}
+
+.list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+
+.list div
+{
+    background-color: #dec4ff10;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,transorm 0.5s;
+}
+
+.list div i
+{
+    font-size: 50px;
+    margin-bottom: 30px;
+
+}
+
+.list div h2
+{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.list div a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.list div:hover
+{
+    background-color: #bb86fca0;
+    transform: translateY(-10px);
+}
+
+/* --------------------work experience------------------ */
+
+#work
+{
+    padding: 50px 0;
+}
+
+.kaam
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.proof
+{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.proof img
+{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: 0.5s;
+}
+
+.layer
+{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #000000d6);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.4s;
+    
+}
+
+.layer h3
+{
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.layer a
+{
+    text-decoration: none;
+    margin-top: 20px;
+    color: #BB86FC;
+    font-size: 18px;
+    line-height: 60px;
+    background: rgba(255, 255, 255, 0.614);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.proof:hover img
+{
+    transform: scale(1.1);
+}
+
+.proof:hover .layer
+{
+    height: 100%;
+}
+
+.btn
+{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #BB86FC;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn:hover
+{
+    background-color: #dec4ff14;
+}
+
+/* ---------------contact-------------- */
+
+.left
+{
+    flex-basis: 35%;
+}
+
+.right
+{
+    flex-basis: 60%;
+}
+
+.left p
+{
+    margin-top: 30px;
+}
+
+.left p i
+{
+    color: #BB86FC;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.icons
+{
+    margin-top: 30px;
+}
+
+.icons a
+{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: white;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.icons a:hover
+{
+    color: #BB86FC;
+    transform: translateY(-3px);
+}
+
+.right form
+{
+    width: 100%;
+
+}
+
+form input, form textarea
+{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #545356b1;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.btn2
+{
+    display: block;
+    margin: 35px auto;
+    width: fit-content;
+    background-color: #12121200;
+    border: 1px solid #BB86FC;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.btn2:hover
+{
+    background-color: #dec4ff14;
+    cursor: pointer;
+}
+
+.copyright
+{
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    font-weight: 300;
+    margin-top: 30px;
+    background-color: #51515111;
+    
+}
